@@ -9,7 +9,7 @@ server = '1'    # 1开启server酱通知  0关闭
 
 class Login():
     def __init__(self):
-        self.get_url = 'https://passport.kanxue.com/user-public_json-' + str(id)+'.htm'
+        self.get_url = 'https://passport.kanxue.com/user-public_json-'+str(id)+'.htm'
         self.signin_url = 'https://bbs.pediy.com/user-signin.htm'
         self.info_url = 'https://sc.ftqq.com/'+sckey+'.send'
         self.header = {
@@ -29,9 +29,9 @@ class Login():
         response = self.session.post(self.signin_url, cookies=self.cookie)
         response = json.loads(response.text)
         if response['code'] == 0:
-            print('sign in success')
-        else:
             print('sign in failed')
+        else:
+            print('sign in success')
         return response
 
     def send(self):
@@ -39,15 +39,15 @@ class Login():
         golds = self.get_info()
         if server == '1':
             if sign_info['code'] == 0:
-                text = '看雪论坛_签到成功'
-                desp = '签到奖励雪币'+str(sign_info['message'])+'您现有雪币'+str(golds)
-            else:
                 text = '看雪论坛_签到失败'
                 desp = str(sign_info['message'])
+            else:
+                text = '看雪论坛_签到成功'
+                desp = '签到奖励雪币'+str(sign_info['message'])+'您现有雪币'+str(golds)
             url = self.info_url+"?text="+text+"&desp="+desp
             requests.get(url)
-
 
 if __name__ == "__main__":
     login = Login()
     login.send()
+
