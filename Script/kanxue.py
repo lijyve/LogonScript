@@ -28,7 +28,7 @@ class Login():
     def sign_in(self):
         response = self.session.post(self.signin_url, cookies=self.cookie)
         response = json.loads(response.text)
-        if response['code'] == 0:
+        if response['code'] == '-1':
             print('sign in failed')
         else:
             print('sign in success')
@@ -38,7 +38,7 @@ class Login():
         sign_info = self.sign_in()
         golds = self.get_info()
         if server == '1':
-            if sign_info['code'] == 0:
+            if sign_info['code'] == '-1':
                 text = '看雪论坛_签到失败'
                 desp = str(sign_info['message'])
             else:
