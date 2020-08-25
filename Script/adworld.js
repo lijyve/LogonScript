@@ -29,7 +29,7 @@ exports.check = async function (param) {
         var {
             data
         } = await axios.get('https://adworld.xctf.org.cn/api/personal/daily_checkin');
-        return data.success;
+        return true;
     } catch (err) {
         return false;
     }
