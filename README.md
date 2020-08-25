@@ -2,7 +2,7 @@
 有空的话，我会写一些用python模拟登录和自动签到的脚本放在这里，作者也是在学习和摸索当中 
 
 ## 2020-8-25
-最近发现一个强大的谷歌插件——[魂签](https://chrome.google.com/webstore/detail/%E9%AD%82%E7%AD%BE/llbielhggjekmfjikgkcaloghnibafdl)，只需要在浏览器保持账号登录，每天打开浏览器时就可以自动签到，这直接解决了无头浏览器模拟登录繁琐等令人头疼的问题，原本打算写的吾爱破解论坛签到脚本也在魂签的[脚本发布站点](https://soulsign.inu1255.cn/)找到了轮子，话不多说，先贡献一个[攻防世界的签到脚本](https://soulsign.inu1255.cn/scripts/243)，已经放到魂签脚本的官网了。  
+最近发现一个强大的谷歌插件——[魂签](https://chrome.google.com/webstore/detail/%E9%AD%82%E7%AD%BE/llbielhggjekmfjikgkcaloghnibafdl)，只需要在浏览器保持账号登录，每天打开浏览器时就可以自动签到，这直接解决了无头浏览器模拟登录繁琐等令人头疼的问题，原本打算写的吾爱破解论坛签到脚本也在魂签的[脚本发布站点](https://soulsign.inu1255.cn/)找到了轮子，话不多说，先贡献两个[攻防世界的签到脚本](https://soulsign.inu1255.cn/scripts/243)和[洛谷打卡脚本](https://soulsign.inu1255.cn/scripts/244)，已经放到魂签脚本的官网了。  
 魂签官网已公开的脚本有一百多个，能涉及到常见的不少论坛了，脚本也很好写，只需要有JavaScript的一点基础就行，大部分代码依葫芦画瓢就能写出来。  
 
 ## 2020-8-8  
