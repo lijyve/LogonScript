@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              闪电加速签到
 // @namespace         https://soulsign.inu1255.cn?account=Virtual-Y-Monster
-// @version           1.0.0
+// @version           1.0.1
 // @author            Virtual-Y-Monster
 // @loginURL          https://freemycloud.pw/auth/login
 // @updateURL         https://soulsign.inu1255.cn/script/Virtual-Y-Monster/闪电加速签到
@@ -29,6 +29,13 @@ exports.run = async function (param) {
 };
 
 exports.check = async function (param) {
+    var {
+        data
+    } = await axios.post('https://freemycloud.pw/auth/login', {
+        'email': param.email,
+        'passwd': param.passwd,
+        'remember_me': 'on'
+    });
     var {
         data
     } = await axios.get('https://freemycloud.pw/user');
