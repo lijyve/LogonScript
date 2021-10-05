@@ -1,6 +1,9 @@
 # LogonScript
 有空的话，我会写一些用python模拟登录和自动签到的脚本放在这里，作者也是在学习和摸索当中
 
+## 2021-10-5
+添加了看雪论坛的签到脚本，配合魂签使用。此脚本参考了[ViCrack的看雪论坛签到](https://soulsign.inu1255.cn/script/ViCrack/%E7%9C%8B%E9%9B%AA%E8%AE%BA%E5%9D%9B.js#soulsign-install)，并修改了其中的bug
+
 ## 2021-5-22
 添加了MT管理器论坛的签到脚本，配合魂签使用。
 
