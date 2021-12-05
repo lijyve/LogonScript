@@ -1,6 +1,10 @@
 # LogonScript
 有空的话，我会写一些用python模拟登录和自动签到的脚本放在这里，作者也是在学习和摸索当中
 
+## 2021-12-5
+hostloc自动刷积分的脚本，此代码在@623524718大佬的基础上稍作修改，取消了TG推送，换成Server酱推送。感谢过去所有的贡献者。  
+脚本的使用需要配合Github Actions，使用方法[参考](https://github.com/623524718/HostlocAutoGetPoints)
+
 ## 2021-11-4
 添加了力扣中国的签到脚本，配合魂签使用。此脚本参考了[yi-Xu-0100的力扣中国签到](https://soulsign.inu1255.cn/script/yi-Xu-0100/%E5%8A%9B%E6%89%A3%E4%B8%AD%E5%9B%BD.js)，并修复了已失效的API，并修改了部分代码。
 
