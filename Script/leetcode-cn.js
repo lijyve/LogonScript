@@ -1,16 +1,16 @@
 // ==UserScript==
 // @name              力扣中国
 // @namespace         https://soulsign.inu1255.cn?account=Virtual-Y-Monster
-// @version           1.0.1
+// @version           1.0.2
 // @author            Virtual-Y-Monster
-// @loginURL          https://leetcode-cn.com/
+// @loginURL          https://leetcode.cn/
 // @expire            900000
-// @domain            leetcode-cn.com
+// @domain            leetcode.cn
 // ==/UserScript==
 
 exports.run = async function (param) {
-    var defaultHeaders = { "Origin": "https://leetcode-cn.com/", "Referer": "https://leetcode-cn.com/points/" };
-    var { data } = await axios.post('https://leetcode-cn.com/graphql/',
+    var defaultHeaders = { "Origin": "https://leetcode.cn/", "Referer": "https://leetcode.cn/points/" };
+    var { data } = await axios.post('https://leetcode.cn/graphql/',
         {
             "operationName": "checkin",
             "variables": {},
@@ -28,7 +28,7 @@ exports.run = async function (param) {
 };
 
 exports.check = async function (param) {
-    var { data } = await axios.get('https://leetcode-cn.com/points/api/total/');
+    var { data } = await axios.get('https://leetcode.cn/points/api/total/');
     if ('detail' in data)
         return !/身份认证信息未提供。/.test(data.detail);
     return true;
